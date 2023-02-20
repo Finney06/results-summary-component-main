@@ -36,7 +36,7 @@ body {
 .blue-section {
     background: linear-gradient(var(--Light-slate-blue-background),var(--Light-royal-blue-background));
     text-align: center;
-    padding: 3.5rem;
+    padding: 3.2rem;
     margin-bottom: 1rem;
     border-radius: 0 0 2.1rem 2.1rem;
 }
@@ -55,14 +55,14 @@ body {
     align-items: center;
     margin: 0 auto;
     border-radius: 50%;
-    width: 12rem;
-    height: 12rem;
+    width: 16rem;
+    height: 16rem;
     margin-bottom: 2.5rem;
 }
 
 .score-circle h2 {
     color: var(--White);
-    font-size: 4.8rem;
+    font-size: 5.2rem;
 }
 
 .score-circle, .blue-section p {
@@ -72,12 +72,12 @@ body {
 
 .blue-section h3 {
     color: var(--White);
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 .white-section {
-    padding: 3.5rem;
+    padding: 3.2rem;
 }
 
 .white-section h4 {
@@ -159,9 +159,33 @@ button {
     border-radius: 3rem;
     padding: 2rem;
     width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(var(--Light-slate-blue-background),var(--Light-royal-blue-background));
 }
 
 @media (min-width:900px) {
-    
+     main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        min-height: 100vh;
+        max-width: 650px;
+     }
+
+     .blue-section {
+        width: 50%;
+        border-radius: 2.1rem;
+        height: 44.1rem;
+     }
+
+     .white-section {
+        box-shadow: rgb(0 0 0 / 19%) 0px 15px 20px;
+        width: 50%;
+        border-radius: 0 2.1rem 2.1rem 0;
+     }
 }
 
