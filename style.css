@@ -169,6 +169,7 @@ button:hover {
 @media (min-width:900px) {
      main {
         display: flex;
+        background-color: var(--White);
         justify-content: center;
         align-items: center;
         margin: 0 auto;
